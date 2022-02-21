@@ -221,7 +221,6 @@ function onSearchOfMovie(){
                                                 <div>
                                                     <p class="badge" style="background-color:#222831;">Country : ${movieCountry}</p>
                                                     <p class="badge" style="background-color:#222831;">Release Date : ${movieReleased}</p>
-                                                    <p class="badge" style="background-color:#222831;">Box Office : ${movieBoxOffice}</p>
                                                 <div>
                                             </div>
                                         </div>
