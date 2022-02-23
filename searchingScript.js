@@ -5,7 +5,7 @@ function onSearchOfMovie(){
     .then(moviesData =>{
         let searchResponse = moviesData.Response;
 
-            let searchLength = moviesData.Search.length;
+            let searchLength = (moviesData.Search).length;
             let totalSearchResults = moviesData.totalResults;
 
             function pagination(){
@@ -66,7 +66,5 @@ function onSearchOfMovie(){
                 
     })
 }
-
-
 
 
