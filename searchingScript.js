@@ -28,8 +28,7 @@ function onSearchOfMovie(){
                         let movieYear = moviesData.Search[j].Year;
                         let moviePoster = moviesData.Search[j].Poster;
                         let typeOfVideo = moviesData.Search[j].Type;
-                        let card = document.createElement("div");
-
+                        let card = document.createElement("div");7
                         let dataCard = `            
                         <div class="card  p-2 bg-light" style="width:250px">
                             <p class="badge bg-danger text-wrap">${typeOfVideo}</p>
@@ -67,5 +66,7 @@ function onSearchOfMovie(){
                 
     })
 }
+
+
 
 
