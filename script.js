@@ -1,6 +1,6 @@
 function onLoadOfBody(){
     let defaultkeyword = "harry+potter";
-    fetch(`https://www.omdbapi.com/?apikey=a02ffa55&s=${defaultkeyword}&plot=full&page=1`)
+    fetch(`https://www.omdbapi.com/?apikey=34601708&s=${defaultkeyword}&plot=full&page=1`)
     .then(response=>response.json())
     .then(moviesData =>{
         let searchLength = moviesData.Search.length;
@@ -15,7 +15,7 @@ function onLoadOfBody(){
 
         for(let i = 1 ; i<=totalNoOfPages; i++){   
 
-            fetch(`https://www.omdbapi.com/?apikey=a02ffa55&s=${defaultkeyword}&plot=full&page=${i}`)
+            fetch(`https://www.omdbapi.com/?apikey=34601708&s=${defaultkeyword}&plot=full&page=${i}`)
             .then(response=>response.json())
             .then(moviesData =>{
             
