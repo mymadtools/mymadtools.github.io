@@ -1,6 +1,6 @@
 function onSearchOfMovie(){
     let mySearchKeyword = document.getElementById("mySearchName").value;
-    fetch(`https://www.omdbapi.com/?apikey=a02ffa55&s=${mySearchKeyword}&plot=full&page=1`)
+    fetch(`https://www.omdbapi.com/?apikey=34601708&s=${mySearchKeyword}&plot=full&page=1`)
     .then(response=>response.json())
     .then(moviesData =>{
         let searchResponse = moviesData.Response;
@@ -19,7 +19,7 @@ function onSearchOfMovie(){
 
             for(let i = 1 ; i<=totalNoOfPages; i++){   
 
-                fetch(`https://www.omdbapi.com/?apikey=a02ffa55&s=${mySearchKeyword}&plot=full&page=${i}`)
+                fetch(`https://www.omdbapi.com/?apikey=34601708&s=${mySearchKeyword}&plot=full&page=${i}`)
                 .then(response=>response.json())
                 .then(moviesData =>{
                 
