@@ -1,5 +1,5 @@
 function onLoadOfBody(){
-    let defaultkeyword = "harry+potter";
+    let defaultkeyword = "Sherlock+Holmes";
     fetch(`https://www.omdbapi.com/?apikey=34601708&s=${defaultkeyword}&plot=full&page=1`)
     .then(response=>response.json())
     .then(moviesData =>{
